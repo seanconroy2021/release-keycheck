@@ -1,0 +1,14 @@
+{
+    "systems": ["mrrc"],
+    "mrrc": {
+      "release": "ga",
+      "environment": "stage",
+      "awsSecret": "example-aws-secret",
+      "charonConfig": "example-charon-config"
+    },
+    "releaseNotes": {
+      "product_name": "exampleproduct",
+      "product_version": "v1.0.0"
+    }
+  }
+  

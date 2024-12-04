@@ -1,0 +1,8 @@
+{
+    "systems": ["slack"],
+    "slack": {
+      "slack-notification-secret": "example-slack-secret",
+      "slack-webhook-notification-secret-keyname": "release"
+    }
+  }
+  

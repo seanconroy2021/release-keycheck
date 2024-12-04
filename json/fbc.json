@@ -1,0 +1,15 @@
+{
+    "systems": ["fbc"],
+    "fbc": {
+      "allowedPackages": ["example-package-1", "example-package-2"],
+      "fromIndex": "registry-proxy.engineering.redhat.com/rh-osbs/iib-preview-rhtap:v4.09",
+      "targetIndex": "quay.io/redhat/redhat-operator-index:v4.10",
+      "publishingCredentials": "example-fbc-publishing-credentials",
+      "buildTimeoutSeconds": 1500,
+      "issueId": "bz123456",
+      "preGA": false,
+      "productName": "exampleproduct",
+      "productVersion": "v1.0.0"
+    }
+  }
+  

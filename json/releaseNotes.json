@@ -1,0 +1,31 @@
+{
+    "systems": ["releaseNotes"],
+    "releaseNotes": {
+      "product_id": 321,
+      "product_name": "exampleproduct",
+      "product_version": "v1.0.0",
+      "product_stream": "RHEL-tp1",
+      "cpe": "cpe:/a:example:openstack:el8",
+      "type": "RHSA",
+      "synopsis": "Security update for exampleproduct",
+      "topic": "Critical security update",
+      "description": "This advisory includes security fixes for exampleproduct.",
+      "solution": "Refer to the documentation to apply the fixes.",
+      "references": [
+        "https://access.redhat.com/security/updates/classification"
+      ],
+      "content": {
+        "images": [
+          {
+            "containerImage": "quay.io/example/openstack@sha256:abc123",
+            "repository": "registry.redhat.io/rhosp16-rhel8/openstack",
+            "tags": ["latest", "v1"],
+            "component": "example-component",
+            "architecture": "amd64",
+            "signingKey": "example-signing-key"
+          }
+        ]
+      }
+    }
+  }
+  

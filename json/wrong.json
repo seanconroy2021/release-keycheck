@@ -1,0 +1,42 @@
+{
+    "systems": ["releaseNotes", "fbc", "cdn"],
+    "releaseNotes": {
+      "product_id": "not-an-integer",
+      "product_name": "Example Product",
+      "product_version": "invalid-version-format",
+      "product_stream": "RHEL-tp1",
+      "cpe": "cpe:/a:example:openstack:el8",
+      "type": "INVALID_TYPE",
+      "synopsis": "Security update",
+      "topic": "Security fixes",
+      "description": "Fixes various security vulnerabilities.",
+      "solution": "Update to the latest version.",
+      "references": "not-an-array",
+      "content": {
+        "images": [
+          {
+            "containerImage": "quay.io/example/openstack@sha256:abc123",
+            "repository": "registry.redhat.io/rhosp16-rhel8/openstack",
+            "tags": ["latest", "v1"],
+            "component": "example-component",
+            "architecture": "amd64",
+            "signingKey": "example-signing-key"
+          }
+        ]
+      }
+    },
+    "fbc": {
+      "allowedPackages": "not-an-array",
+      "fromIndex": "registry-proxy.engineering.redhat.com/rh-osbs/iib-preview-rhtap:v4.09",
+      "targetIndex": "quay.io/redhat/redhat-operator-index:v4.10",
+      "publishingCredentials": "example-fbc-publishing-credentials",
+      "buildTimeoutSeconds": "not-an-integer",
+      "issueId": 12345,
+      "preGA": "not-a-boolean",
+      "productName": "exampleproduct",
+      "productVersion": "v1.0.0"
+    },
+    "cdn": {
+      "env": "invalid-env"
+    }
+  }

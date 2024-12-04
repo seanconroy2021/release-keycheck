@@ -1,0 +1,11 @@
+{
+    "systems": ["sign"],
+    "sign": {
+      "configMapName": "example-signing-config",
+      "cosignSecretName": "example-cosign-secret",
+      "request": "signing-pipeline",
+      "pipelineImage": "quay.io/example/signing-tools",
+      "requestType": "internal-request"
+    }
+  }
+  

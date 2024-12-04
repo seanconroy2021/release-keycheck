@@ -1,0 +1,9 @@
+{
+    "systems": ["pyxis"],
+    "pyxis": {
+      "secret": "example-pyxis-secret",
+      "server": "production-internal",
+      "skipRepoPublishing": false
+    }
+  }
+  

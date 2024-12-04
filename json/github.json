@@ -1,0 +1,7 @@
+{
+    "systems": ["github"],
+    "github": {
+      "githubSecret": "example-github-token-secret"
+    }
+  }
+  

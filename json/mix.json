@@ -1,0 +1,43 @@
+{
+    "systems": ["releaseNotes", "fbc", "cdn"],
+    "releaseNotes": {
+      "product_id": 123,
+      "product_name": "combinedproduct",
+      "product_version": "v2.0.0",
+      "product_stream": "RHEL-tp2",
+      "cpe": "cpe:/a:example:combinedproduct:el8",
+      "type": "RHBA",
+      "synopsis": "Bug fix update for combinedproduct",
+      "topic": "Bug fixes and performance improvements",
+      "description": "This advisory addresses several bug fixes and performance improvements.",
+      "solution": "Follow the instructions provided in the documentation.",
+      "references": ["https://docs.example.com/release-notes"],
+      "content": {
+        "images": [
+          {
+            "containerImage": "quay.io/example/combined@sha256:def456",
+            "repository": "registry.redhat.io/rhosp16-rhel8/combined",
+            "tags": ["v2.0", "latest"],
+            "component": "combined-component",
+            "architecture": "amd64",
+            "signingKey": "combined-signing-key"
+          }
+        ]
+      }
+    },
+    "fbc": {
+      "allowedPackages": ["pkg1", "pkg2"],
+      "fromIndex": "registry.example.com/index:v1.0",
+      "targetIndex": "quay.io/example/index:v2.0",
+      "publishingCredentials": "combined-fbc-credentials",
+      "buildTimeoutSeconds": 1800,
+      "issueId": "bug-12345",
+      "preGA": true,
+      "productName": "combinedproduct",
+      "productVersion": "v2.0.0"
+    },
+    "cdn": {
+      "env": "qa"
+    }
+  }
+  

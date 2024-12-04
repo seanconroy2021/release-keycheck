@@ -1,0 +1,25 @@
+{
+    "systems": ["contentGateway"],
+    "mapping": {
+      "components": [
+        {
+          "name": "example-component",
+          "repository": "quay.io/redhat/example-component",
+          "contentGateway": {
+            "productName": "example-product",
+            "productCode": "12345",
+            "productVersionName": "v1.0",
+            "filePrefix": "example",
+            "mirrorOpenshiftPush": true,
+            "components": [
+              {
+                "name": "example-component",
+                "description": "A component description"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  
