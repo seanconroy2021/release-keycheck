@@ -1,0 +1,44 @@
+{
+  "systems": ["mapping"],
+  "mapping": {
+    "components": [
+      {
+        "name": "example-component",
+        "repository": "quay.io/redhat/example-component",
+        "baseImage": true,
+        "tags": ["v1.0", "latest"],
+        "staged": {
+          "destination": "pulp-repo",
+          "version": "1.0.0",
+          "files": [
+            {
+              "filename": "example-file.tar.gz",
+              "source": "/build/output/example-file.tar.gz"
+            }
+          ]
+        },
+        "contentGateway": {
+          "productName": "exampleproduct",
+          "productCode": "12345",
+          "productVersionName": "v1.0",
+          "filePrefix": "example-prefix",
+          "mirrorOpenshiftPush": true,
+          "components": [
+            {
+              "name": "example-sub-component",
+              "description": "A sub-component of the example product."
+            }
+          ]
+        },
+        "pushSourceContainer": true,
+        "public": false
+      }
+    ],
+    "defaults": {
+      "tags": ["{{ git_sha }}", "{{ digest_sha }}", "v1.0"],
+      "pushSourceContainer": true,
+      "public": false
+    },
+    "registrySecret": "example-registry-secret"
+  }
+}
